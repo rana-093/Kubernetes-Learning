@@ -1,0 +1,16 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: redis
+  labels:
+    app: redis
+    rel: stable
+
+spec:
+  containers:
+    - name: redis
+      image: redis123
+
+#kubectl apply -f redis-definition.yml
