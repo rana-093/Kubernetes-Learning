@@ -14,11 +14,11 @@ kubectl replace -f nameofreplicasetfile.yml
 kubectl replace -f nameofreplicasetfile.yml ( Changing the replicas inside the file )
 kubectl scale --replicas=6 -f nameofreplicasetfile.yml
 
-=============================================Deployment==================================
+============================================= Deployment ==================================
 kubectl create deployment --help
 kubectl create deployment NAME --image=IMAGE_NAME --replace=3
 
-=================================NameSpace============================
+================================= NameSpace ============================
 kubectl config set-context $(kubectl config current-context) --namespace=prod
 kubectl get pods --namespace=prod
 kubectl get pods --all-namespaces
