@@ -17,6 +17,7 @@ kubectl scale --replicas=6 -f nameofreplicasetfile.yml
 ============================================= Deployment ==================================
 kubectl create deployment --help
 kubectl create deployment NAME --image=IMAGE_NAME --replace=3
+kubectl create deployment NAME --image=IMAGE_NAME --replace=3 --dry-run=client -o yaml
 
 ================================= NameSpace ============================
 kubectl config set-context $(kubectl config current-context) --namespace=prod
